@@ -1,5 +1,7 @@
 const configForm = document.querySelector('.config')
 
 configForm.addEventListener('submit', (e) => {
-    Telegram.WebApp.sendData('Testeeee')
+    e.preventDefault()
+    let text = 'This is a test baby'
+    Telegram.WebApp.sendData(text);
 })
